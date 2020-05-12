@@ -20,34 +20,34 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
-          <span><%= image_tag "icons/—Pngtree—red heart outline_5054043.png", class: "navbar-brand" %></span>
+          <span><%= image_tag "icons/heart-icon.png", class: "navbar-brand" %></span>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
               <%= link_to favorites_index_path do %>
-                <%= image_tag "icons/—Pngtree—red heart outline_5054043.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
             <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag 'icons/—Pngtree—photography camera_4103466.png' %>
+                  <%= image_tag 'icons/photography-icon.png' %>
                 <% end %>
             </li>
             <li>
               <%= link_to logout_path, method: :delete do %>
-                <%= image_tag "icons/—Pngtree—logout vector icon_4017349.png" %>
+                <%= image_tag "icons/logout-icon.png" %>
               <% end %>
             </li>
           <% else %>
             <li>
               <%= link_to new_user_path do %>
-                <%= image_tag "icons/—Pngtree—red heart outline_5054043.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
             <li>
               <%= link_to login_path do %>
-                <%= image_tag "icons/—Pngtree—red heart outline_5054043.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
           <% end %>
