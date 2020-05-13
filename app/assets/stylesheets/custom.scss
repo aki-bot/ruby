@@ -24,7 +24,7 @@ h1, h2 {
   .top-hero-wrapper {
     width: 100vw;
     height: 100vh;
-    background-image: url('/img/pic-2.jpg');
+    background-image: url('/img/hu.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,7 +51,7 @@ h1, h2 {
   .users-new-wrapper {
     width: 100vw;
     height: 100vh;
-    background-image: image-url('/img/pic-2.jpg');
+    background-image: image-url('/img/hu.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -83,8 +83,16 @@ h1, h2 {
   
     .navbar-brand {
       padding: 0px;
-      margin-top: 15px;
+      margin-top: 25px;
+      font-size: 50px;
+      font-family: serif;
     }
+
+    .test {
+      padding: 0px;
+      margin-top: 30px !important;
+    }
+
   
     img {
       height: 40px;
@@ -140,4 +148,8 @@ h1, h2 {
         margin-left: 20px;
       }
     }
+  }
+
+  .sub{
+    padding-left: 20px;
   }
