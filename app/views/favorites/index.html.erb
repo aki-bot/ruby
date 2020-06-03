@@ -5,10 +5,11 @@
         <div class="col-md-6 col-md-offset-3">
           <div class="topic-index-single">
             <h2 class="topic-author">
-              <%= topic.user.name %>
+              <%# <%= topic.user.name %> 
+              <h2 class="test2">UserName <%= topic.user.name%><h2>
             </h2>
             <%= image_tag topic.image.url %>
-            <%= image_tag 'icons/heart-icon.png', class: 'topic-index-icon' %>
+            <%= image_tag 'icons/ハートのマーク5.png', class: 'topic-index-icon' %>
             <p class="topic-text">
               <%= topic.description %>
             </p>
