@@ -2,7 +2,7 @@
 <%# ここは共通ファイルになっている%>
 <html>
   <head>
-    <title>How was your day</title>
+    <title>Pictgram</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -20,35 +20,35 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
-        <span><%= image_tag "icons/home.png", class: "test1" %></span>
-          <%# <span class="navbar-brand">Pictgram</span> %>
+        
+          <span class="navbar-brand">Pictgram</span>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
               <%= link_to favorites_index_path do %>
-                <%= image_tag "icons/ハートのマーク5.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
             <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag 'icons/紙とペンのアイコン素材.png' %>
+                  <%= image_tag 'icons/photography-icon.png' %>
                 <% end %>
             </li>
             <li>
               <%= link_to logout_path, method: :delete do %>
-                <%= image_tag "icons/Uターン矢印 1.png" %>
+                <%= image_tag "icons/logout-icon.png" %>
               <% end %>
             </li>
           <% else %>
             <li>
               <%= link_to new_user_path do %>
-                <%= image_tag "icons/登録アイコン.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
             <li>
               <%= link_to login_path do %>
-                <%= image_tag "icons/Uターン矢印 1.png" %>
+                <%= image_tag "icons/heart-icon.png" %>
               <% end %>
             </li>
           <% end %>

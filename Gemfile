@@ -51,7 +51,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
@@ -86,10 +85,3 @@ gem 'font-awesome-sass'
 
 # 画像投稿機能の作成をするには少し複雑なことから「gem」を使って簡単に扱えるようにする
 gem "carrierwave"
-
-
-group :production do
-  gem 'pg'
-end
-
-gem "mysql2", group: :development
