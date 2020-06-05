@@ -2,7 +2,7 @@
 <%# ここは共通ファイルになっている%>
 <html>
   <head>
-    <title>Pictgram</title>
+    <title>How was your day</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -20,35 +20,35 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
-        
-          <span class="navbar-brand">Pictgram</span>
+        <span><%= image_tag "icons/home.png", class: "navbar-brand" %></span>
+          
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
               <%= link_to favorites_index_path do %>
-                <%= image_tag "icons/heart-icon.png" %>
+                <%= image_tag "icons/camera.png" %>
               <% end %>
             </li>
             <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag 'icons/photography-icon.png' %>
+                  <%= image_tag 'icons/pen.png' %>
                 <% end %>
             </li>
             <li>
               <%= link_to logout_path, method: :delete do %>
-                <%= image_tag "icons/logout-icon.png" %>
+                <%= image_tag "icons/back.png" %>
               <% end %>
             </li>
           <% else %>
             <li>
               <%= link_to new_user_path do %>
-                <%= image_tag "icons/heart-icon.png" %>
+                <%= image_tag "icons/sing.png" %>
               <% end %>
             </li>
             <li>
               <%= link_to login_path do %>
-                <%= image_tag "icons/heart-icon.png" %>
+                <%= image_tag "icons/inn.png" %>
               <% end %>
             </li>
           <% end %>

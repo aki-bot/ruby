@@ -6,8 +6,12 @@ h1, h2 {
   
   .text-white {
     color: #fff;
+    font-family: cursive;
+    font-weight: bold;
+    
   }
   
+
   .btn-white {
     color: #fff;
     border: 1px solid #fff;
@@ -15,7 +19,7 @@ h1, h2 {
     padding-bottom: 15px;
     font-size: 20px;
     background-color: rgba(0,0,0,0.0);
-  
+    font-family: cursive;
     &:hover {
       color: #fff;
     }
@@ -24,7 +28,7 @@ h1, h2 {
   .top-hero-wrapper {
     width: 100vw;
     height: 100vh;
-    background-image: url('/img/hu.webp');
+    background-image: url('/img/top.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,7 +55,7 @@ h1, h2 {
   .users-new-wrapper {
     width: 100vw;
     height: 100vh;
-    background-image: image-url('/img/hu.webp');
+    background-image: image-url('/img/top.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -83,9 +87,7 @@ h1, h2 {
   
     .navbar-brand {
       padding: 0px;
-      margin-top: 25px;
-      font-size: 50px;
-      font-family: serif;
+      margin-top: 15px;
     }
 
     .test {

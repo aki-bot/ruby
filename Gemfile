@@ -7,7 +7,7 @@ ruby '2.6.6'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Use mysql as the database for Active Record
 # gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem "sqlite3"
+gem "sqlite3",group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -51,6 +51,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
@@ -85,3 +89,4 @@ gem 'font-awesome-sass'
 
 # 画像投稿機能の作成をするには少し複雑なことから「gem」を使って簡単に扱えるようにする
 gem "carrierwave"
+
